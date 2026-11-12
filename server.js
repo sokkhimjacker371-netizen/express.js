@@ -15,7 +15,7 @@ app.get('/info', (req, res) => {
     let server_info = `<center>
         <h1 style='color: green'>Your Server Information</h1>
         <hr/>
-        <ul>
+        <ul style='list-style: none; font-size: 20px; color: blue'>
             <li>
                 "Platform:" ${os.platform()}
             </li>
@@ -43,3 +43,4 @@ app.get('/info', (req, res) => {
 app.listen(PORT,()=>{
     console.log(`Server started on port:  http://localhost:${PORT}`)
 })
+    
